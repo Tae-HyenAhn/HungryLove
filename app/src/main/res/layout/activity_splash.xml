@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/hungryColor"
+    tools:context="me.hungrylove.hungryloveproject.SplashActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="70dp"
+        android:paddingLeft="15dp"
+        app:srcCompat="@drawable/splash_img"
+        tools:layout_editor_absoluteX="150dp"
+        tools:layout_editor_absoluteY="538dp" />
+
+    <ImageView
+        android:id="@+id/splash_laoding"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_above="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="168dp"
+        tools:layout_editor_absoluteY="450dp" />
+</RelativeLayout>

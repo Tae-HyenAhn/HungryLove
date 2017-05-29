@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">사랑에 휘청여도 배는 고프다</string>
+
+    <string name="typeface_name">font/jeju_myeongjo.ttf</string>
+
+    <string name="fab_menu">더보기</string>
+    
+    <string name="menu_close">닫기</string>
+    <string name="menu_puchase">책 구매하기</string>
+    <string name="menu_share">앱 공유하기</string>
+    <string name="menu_insta">작가 페이지</string>
+    <string name="menu_get_books">입고 문의</string>
+
+    <string name="author">안 승 현</string>
+    <string name="title">사랑에 휘청여도\n배는 고프다</string>
+    <string name="intro">사랑에 휘청여도 배는 고프다.\n보지 않아도 하늘은 푸르고\n밤에는 별이 뜨고 진다.</string>
+
+    <string name="last_title">사랑에\n휘청여도\n배는\n고프다</string>
+    <string name="last_date">발행일.</string>
+    <string name="last_author">글쓴이.</string>
+    <string name="last_date_string">2017년2월</string>
+    <string name="last_author_string">안승현</string>
+    <string name="last_author_email">qq558@naver.com</string>
+    <string name="last_app_developer">앱 개발.</string>
+    <string name="last_app_developer_string">안태현</string>
+    <string name="last_app_developer_email">thahn88@naver.com</string>
+
+    <string name="back_cover_price">10,001 원</string>
+
+    <string name="pref_key">page_pref</string>
+    <string name="page_no">page_no</string>
+
+    <string name="intent_page_no">intent_page_no</string>
+
+    <string name="dialog_title">이어보기</string>
+    <string name="dialog_continue">이어보기</string>
+    <string name="dialog_first">처음부터</string>
+</resources>

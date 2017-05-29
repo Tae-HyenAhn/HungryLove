@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="hungryColor">#cdd5d0</color>
+    <color name="hungryTitleColor">#6c6d70</color>
+    <color name="hungryContentColor">#231f20</color>
+    <color name="hungryCoverTextColor">#4b4c4d</color>
+    <color name="hungryMenuBgColor">#eeeeee</color>
+</resources>

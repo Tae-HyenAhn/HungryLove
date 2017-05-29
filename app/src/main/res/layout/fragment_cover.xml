@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hungryColor"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/cover_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="70dp"
+            android:paddingLeft="15dp"
+            app:srcCompat="@drawable/splash_img" />
+
+        <TextView
+            android:id="@+id/cover_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="60dp"
+            android:lineSpacingExtra="6dp"
+            android:text="@string/title"
+            android:textColor="@color/hungryCoverTextColor"
+            android:textSize="22dp" />
+
+        <TextView
+            android:id="@+id/cover_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="60dp"
+            android:text="@string/author"
+            android:textColor="@color/hungryCoverTextColor"
+            android:textSize="16dp" />
+    </RelativeLayout>
+</LinearLayout>
