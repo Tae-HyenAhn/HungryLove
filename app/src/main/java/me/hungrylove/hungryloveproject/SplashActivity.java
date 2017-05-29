@@ -131,12 +131,17 @@ public class SplashActivity extends AppCompatActivity {
     }
 
     private void init(){
+        //Fabric init..
         Fabric.with(this, new Crashlytics());
         loading = (ImageView) findViewById(R.id.splash_laoding);
         Glide.with(this).load(R.raw.splash_loading).into(loading);
         BookData.getInstance().getArrayList().clear();
     }
 
+    /**
+     * 종료 했을 당시의 페이지를 다시 불러온다
+     * @return
+     */
     private int getCurrentPage(){
         SharedPreferences pref = getSharedPreferences(getResources().getString(R.string.pref_key), MODE_PRIVATE);
         return pref.getInt(getResources().getString(R.string.page_no), 0);

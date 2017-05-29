@@ -57,6 +57,10 @@ public class MainActivity extends AppCompatActivity {
         super.onDestroy();
     }
 
+    /**
+     * 종료했을 때의 페이지 넘버를 저장한다
+     * @param page 종료 당시 보던 페이지 넘버
+     */
     private void saveCurrentPage(int page){
         if(bookPager != null){
             SharedPreferences pref = getSharedPreferences(getResources().getString(R.string.pref_key), MODE_PRIVATE);

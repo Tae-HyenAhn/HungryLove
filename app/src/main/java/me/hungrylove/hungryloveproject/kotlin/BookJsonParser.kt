@@ -13,13 +13,20 @@ import java.io.InputStreamReader
 import java.util.ArrayList
 
 import me.hungrylove.hungryloveproject.Book
+import me.hungrylove.hungryloveproject.BookData
 
 /**
+ * BookJsonParser.kt
+ * 코틀린 해봄 // json 파서
  * Created by Taehyen on 2017-05-29.
  */
 
 object BookJsonParser {
 
+    /**
+     * Json Parsing...
+     * Java버전으로는 static 으로 선언한 함수인데 Kotlin의 함수 static은??
+     */
     fun bookJsonParse(context: Context, list: ArrayList<Book>) {
 
         val assetManager = context.resources.assets
@@ -32,6 +39,7 @@ object BookJsonParser {
             var str:String? = ""
 
             //while({str = br.readLine()}() != null){   //always true condition
+            // kotlin 은 컨디션 내에 변수에 값을 어사인 할 수 없다... 해서 아래와 같이.
             while(str != null){
                 str = br.readLine()
                 sb.append(str)
