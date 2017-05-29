@@ -4,27 +4,19 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.content.res.AssetManager;
 import android.os.AsyncTask;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 
 import com.crashlytics.android.Crashlytics;
 import io.fabric.sdk.android.Fabric;
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
+import me.hungrylove.hungryloveproject.kotlin.BookJsonParser;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
 
 public class SplashActivity extends AppCompatActivity {
 
@@ -45,6 +37,12 @@ public class SplashActivity extends AppCompatActivity {
 
             @Override
             protected Void doInBackground(Void... params) {
+
+                //Kotlin 버전
+                BookJsonParser.INSTANCE.bookJsonParse(getApplicationContext(), BookData.getInstance().getArrayList());
+
+                //Java 버전
+                /*
                 AssetManager assetManager = getResources().getAssets();
 
                 try{
@@ -73,6 +71,7 @@ public class SplashActivity extends AppCompatActivity {
                 } catch (IOException e){
                     e.printStackTrace();
                 }
+                */
 
                 return null;
             }
@@ -80,7 +79,6 @@ public class SplashActivity extends AppCompatActivity {
             @Override
             protected void onPostExecute(Void aVoid) {
                 loading.setVisibility(View.INVISIBLE);
-                //Toast.makeText(getApplicationContext(), "TOTAL: "+BookData.getInstance().getArrayList().size(), Toast.LENGTH_SHORT).show();
 
                 new Handler().postDelayed(new Runnable() {
                     @Override
