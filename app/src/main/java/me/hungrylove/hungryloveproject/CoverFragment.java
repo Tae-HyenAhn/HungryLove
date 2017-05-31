@@ -16,7 +16,6 @@ import android.widget.TextView;
 public class CoverFragment extends Fragment {
 
     private TextView bookTitle, author;
-    private Typeface typeface;
 
     public CoverFragment() {
     }

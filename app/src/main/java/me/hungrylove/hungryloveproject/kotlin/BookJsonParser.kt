@@ -18,7 +18,6 @@ import me.hungrylove.hungryloveproject.BookData
 /**
  * BookJsonParser.kt
  * 코틀린 해봄 // json 파서
- * Created by Taehyen on 2017-05-29.
  */
 
 object BookJsonParser {
@@ -38,7 +37,7 @@ object BookJsonParser {
             val sb:StringBuilder = StringBuilder()
             var str:String? = ""
 
-            //while({str = br.readLine()}() != null){   //always true condition
+            //while({str = br.readLine()}() != null){
             // kotlin 은 컨디션 내에 변수에 값을 어사인 할 수 없다... 해서 아래와 같이.
             while(str != null){
                 str = br.readLine()

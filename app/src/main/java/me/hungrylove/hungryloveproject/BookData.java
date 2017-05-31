@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 /**
  * Created by sb on 2017. 4. 26..
+ * 싱글톤으로 책 데이터 관리
  */
 
 public class BookData {
